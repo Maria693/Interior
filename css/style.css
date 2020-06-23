@@ -1,0 +1,999 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1366px;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header{
+    padding-top: 63px;
+}
+.slaider{
+    height: 800px;
+    background-image: url(../images/slider-img.jpg);
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    
+} 
+.menu-list{
+    list-style-type: none;
+    float: left;
+    padding: 10px 13px;
+}
+.menu-link{
+    /* Style for "HOME     P" */
+     color: #8c8c8c;
+     font-size: 14px;
+     font-weight: 300;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+.menu-link:hover{
+    color: #212121;
+}
+.menu-link-active{
+/* Text style for "HOME" */
+    color: #212121;
+    font-family: "Montserrat - Bold";
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid  #212121;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: bold;
+    text-decoration: none;
+}
+.menu{
+    float:right;
+}
+
+.slider-trending{
+    color: #43a047;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.slider-h2{
+    /* Style for "Fishnet Ch" */
+
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+}
+.slider-content{
+    /* Style for "Seat and b" */
+
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    width:458px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.slider-text{
+    clear: both;
+}
+.button{
+    /* Style for "back" */
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+    background-color: #ffffff;
+    width: 212px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    
+}
+.button:hover{
+    box-shadow: none;
+}
+.button:hover::after{
+    content: ">";
+}
+.circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+    margin: 5px;
+}
+.circle:hover{
+    background-color: #212121;
+}
+.circle-active{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #212121;
+    margin-bottom: 0px;
+}
+.pagination{
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    text-align: center;
+}
+/*вторая страница ге 4 фотки*/
+.gallery{
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    
+} 
+.explore{
+    float: right;
+    /* Style for "explore al" */
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "explore al" */
+    color: #212121;
+    letter-spacing: 3.6px;
+    height: 13px;
+    padding-top: 16px;
+}
+.explore_link{
+    text-decoration: none;
+    color: #212121;
+}
+.explore_link:hover{
+    color: #6c6c6c;
+    
+}
+
+.new{
+    float: left;
+    /* Style for "New" */
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 1px solid #6c6c6c;
+    height: 50px;
+    
+}
+.new-link{
+    color: #6c6c6c;
+    text-decoration: none;
+}
+.new-link:hover{
+    color: #212121; 
+}
+.featured{
+    width:200px;
+    float: left;
+    height: 50px;
+    /* Style for "Featured" */
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
+    font-weight: 700;
+    border-bottom: 3px solid #212121;
+    margin-bottom: 50px;
+}
+.featured-link{
+    color: #212121;
+    text-decoration: none; 
+}
+.upper-menu{
+    padding-top: 120px;
+}
+.pic{
+/* Style for "back" */
+    width: 260px;
+    height: 260px;
+    border: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.9;
+    display: inline-block;
+    margin-left: 30px;
+    margin: 0;
+    position: relative;
+}
+.photos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.pic:hover .pic_content{
+    opacity: 2;
+}
+.pic:hover .pic_img{
+    opacity: .1;
+}
+.pic_content{
+    position: absolute;
+    top:0px;
+    opacity: -1;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+}
+.text-chair{
+    /* Style for "Fishnet Ch" */
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    text-align: center;
+}
+.text-seat{
+    /* Style for "Seat and b" */
+    color: #6c6c6c;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21.91px;
+    text-align: center;
+    width: 206px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 15px;
+    
+}
+.circle-2{
+/* Style for "back" */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 24px;
+    background-color: #ffffff;
+    margin-left: 111px;
+    margin-top: 62px;
+    margin-bottom: 19px;
+    display: flex;
+    justify-content: center;
+
+}
+.arrow{
+    text-decoration: none;
+}
+.two-pic{
+    display:flex;
+}.photo{
+    width: 683px;
+    height: 683px;
+}
+.first-photo{
+    background-image: url(../images/promo-img1.jpg);
+    background-size: cover;
+}
+.second-photo{
+    background-image: url(../images/promo-img.jpg);
+    background-size: cover;
+}
+.photo-exclusive{
+    /* Style for "exclusive" */
+    
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "exclusive" */
+    color: #1e88e5;
+    letter-spacing: 1.8px;
+}
+.first-photo-text{
+    margin-top: 228px;
+    padding-left: 51px;
+}
+.photo-h2{
+    /* Style for "Fishnet Ch" */
+    
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+}
+.photo-content{
+    /* Style for "Seat and b" */
+    width: 384px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.04px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*четвертая страница где много фоток*/
+.trending{
+    /* Style for "Trending P" */
+    
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline;
+}
+.photos2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 120px;
+    
+}
+.pics{
+    /* Style for "product-21" */
+    width: 370px;
+    height: 370px;
+    margin-bottom: 30px;
+}
+.pics:hover{
+    opacity: 0.6;
+}
+.five{
+    background-image: url(../images/product-11.jpg);
+    background-size: cover;
+}
+.six{
+    background-image: url(../images/product-21.jpg);
+    background-size: cover;
+}
+.seven{
+    background-image: url(../images/product-31.jpg);
+    background-size: cover;
+}
+.eight{
+    background-image: url(../images/product-41.jpg);
+    background-size: cover;
+}
+.nine{
+    background-image: url(../images/product-5.jpg);
+    background-size: cover;
+}
+.ten{
+    background-image: url(../images/product-6.jpg);
+    background-size: cover;
+}
+/*страница со вторым большим фото*/
+.slaider2{
+    height: 800px;
+    background-image: url(../images/slider.jpg);
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+} 
+.slider2-text{
+    padding-top: 322px;
+}
+.slider2-Hot{
+    /* Style for "Hot deal" */
+
+    color: #e53935;
+    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "Hot deal" */
+    color: #e53935;
+    letter-spacing: 1.8px;
+}
+.slider2-h2{
+    /* Style for "Fishnet Ch" */
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    text-transform: uppercase;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+.slider2-content{
+    /* Style for "Seat and b" */
+    width: 458px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+/* блок где 5 фоток*/
+
+.first-picture{
+    background-image: url(../images/product-1-lg.jpg);
+    width: 570px;
+    height: 570px;
+    margin-right: 30px;
+}
+.photo-block{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:120px ;
+}
+.second-picture{
+    display: flex;
+    width: 570px;
+    height: 570px;
+    flex-wrap:wrap;
+}
+.elevel{
+    background-image: url(../images/product-2-sm.jpg);
+    width: 270px;
+    height: 270px; 
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.twelve{
+    background-image: url(../images/product-3-sm.jpg);
+    width: 270px;
+    height: 270px; 
+    margin-bottom: 30px;
+}
+.thirteen{
+    background-image: url(../images/product-4-sm.jpg);
+    width: 270px;
+    height: 270px; 
+    margin-right: 30px;
+}
+.fourteen{
+    background-image: url(../images/product-5-sm.jpg);
+    width: 270px;
+    height: 270px; 
+}
+.slaider3{
+    background-image: url(../images/back-img.jpg);
+    background-repeat: no-repeat;
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    height: 516px;
+} 
+.slider3-text{
+padding-top: 125px;
+}
+.slider3-trending{
+/* Style for "mobile app" */
+    color: #6c6c6c;
+    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "mobile app" */
+    color: #6c6c6c;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+}
+.slider3-h2{
+    /* Style for "Find. Foll" */
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: 700px;
+    clear: both;
+
+}
+.slider3-content{
+/* Style for "Save your" */
+
+   color: #6c6c6c;
+   font-size: 22px;
+   font-weight: 300;
+   line-height: 24px;
+   margin-top: 20px;  
+}
+.apss{
+    margin-top: 33px;
+    cursor: pointer;
+}
+#app{
+    margin-right: 10px;
+}
+.contacts{
+    padding-top: 120px;
+    margin-right: 59px;
+    
+}
+.contact{
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "C, ontact" */
+    letter-spacing: 1.8px;
+    margin-bottom: 24px; 
+}
+.information{
+    padding-top: 120px;
+}
+.footer__title{
+    /* Style for "Contact Us" */
+
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "C, ontact" */
+    letter-spacing: 1.8px;
+    margin-bottom: 24px;
+}
+.adress{
+    /* Style for "132A Bridg" */
+    width: 221px;
+    height: 60px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.slaider4{
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 384px;
+    background-color: #f5f5f5;
+}
+#contacts_link{
+    text-decoration: none;
+}
+.sales{
+    /* Style for "Sales term" */
+
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Sales term" */
+    letter-spacing: 0.7px;
+    width: 150px;
+    height: 62px;
+}
+.talk{
+    margin-top: 0.1px;
+    width: 221px;
+}
+.footer__links{
+    display: flex;
+    padding-top: 15px;
+}
+.footer__links-item:first-child{
+    padding-right: 100px;
+}
+.footer__link{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.857;
+}
+.footer__link:hover{
+    text-decoration: underline;
+}
+.careers{
+    /* Style for "Architect" */
+    width: 187px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Architect" */
+    letter-spacing: 0.7px;
+}
+.Architect{
+    padding-top: 143px;
+}
+.lets{
+    padding-top: 120px;
+    margin-left: 78px;
+}
+.Suscribe{
+    /* Style for "Suscribe t" */
+    width: 375px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 26px;
+}
+.footer__input{
+    font-size: 14px;
+    line-height: 1.571;
+    color: #808080;
+    width: 320px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #d9dee1;
+    padding-left: 20px;
+    border-right: none;
+    outline: none;
+    display: block;
+}
+.footer__input:focus{
+    font-size: 18px;
+    color: #808080;
+}
+.input__img{
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid #d9dee1;
+    border-left: none;
+    text-align: center;
+    padding-top: 16px;
+    cursor: pointer;
+}
+.input__img:hover{
+    background-color: rgb(221, 216, 216);
+}
+.input{
+    display: flex;
+}
+.last_height{
+    padding-left: 98px;
+    padding-right: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-bottom: 30px;
+    background-color: #f5f5f5;
+}
+.last_circle > img{
+    cursor: pointer;
+}
+.circle{
+    display: inline-block;
+    /* Style for "" */
+width: 25px;
+height: 25px;
+color: #6c6c6c;
+font-size: 28px;
+font-weight: 400;
+line-height: 26px;
+text-transform: uppercase;
+/* Text style for ", " */
+letter-spacing: 5.6px;
+}
+.circle-active{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #212121;
+    margin-bottom: 0px;
+}
+.Copyright{
+    padding-top: 8px;
+    /* Style for "© Copyrigh" */
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "©,  Copyri" */
+    letter-spacing: 0.6px;
+}
+.Terms{
+    padding-top: 8px;
+     /* Style for "© Copyrigh" */
+     color: #6c6c6c;
+     font-size: 12px;
+     font-weight: 700;
+     line-height: 26px;
+     text-transform: uppercase;
+     /* Text style for "©,  Copyri" */
+     letter-spacing: 0.6px;
+}
+.slaider5{
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 384px;
+    background-color: #f5f5f5;
+}
+.contacts-menu{
+    display: flex;
+    justify-content: space-between;
+    width:1170px;
+    flex-wrap:wrap;
+}
+.contacts_us{
+    /* Style for "Contact Us" */
+
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    margin-top: 171px;
+}
+header{
+    height: 360px;
+}
+.photos_contacts{
+    display: flex;
+    margin-top: 171px;
+    margin-bottom: 122px;
+}
+.contacts_style{
+    /* Style for "back" */
+     width: 370px;
+     height: 370px;
+     border: 1px solid #9c9c9c;
+}
+.pic_one_contacts{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.pic_two_contacts {
+    margin-right: 30px;
+}
+#logo_contatcs{
+    width: 52px;
+    height: 48px;
+    padding-left: 155px;
+    margin-top: 48px;
+}
+.text-contacts{
+    display: flex;
+    width: 280px;
+    height: 138px;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 23px;
+    text-align: center;
+    line-height: 20px;
+}
+.phone{
+    width: 271px;
+    height: 138px;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.numbers{
+    color: #212121;
+    font-family: "Montserrat - Bold";
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+}
+/*продукты*/
+.slaider6{
+    padding-left: 98px;
+    padding-right: 98px;
+    position: relative;
+    background-color: #ffffff;
+}
+.header-products{
+    height: 119px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.menu_down{
+    display: flex;
+    list-style-type: none;
+    width: 647px;
+    height: 13px;
+    justify-content: space-between;
+    margin-left: 360px;
+    padding-top: 28px;
+    
+}
+.menu_down_list{
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 500;
+    color: #212121;
+}
+.menu_down_link_active{
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+
+}
+.menu_down_link:hover{
+    color: #212121;
+    font-weight: 700;
+}
+.menu_down_link_active{
+    text-decoration: none;
+    color: #212121;
+}
+.menu_down_link{
+    text-decoration: none;
+    color: #212121;
+}
+.slaider7{
+    height: 75px;
+    background-color: #f5f5f5;
+}
+
+.products-photo{
+    background-image: url(../images/slider1.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.money{
+    /* Style for "$ 36.7/sq" */
+
+color: #212121;
+font-size: 36px;
+display: inline-block;
+}
+.money2{
+    color: #212121;
+    font-family: Gotham;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48.02px;
+    display: inline-block;
+    text-align: center;
+}
+.money_products{
+    padding-left: 170px;
+}
+.button2{
+  /* Style for "back" */
+     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+     border-radius: 50px;
+     text-transform: uppercase;
+     font-size: 18px;
+     font-weight: 700;
+     color: #212121;
+     background-color: #f44336;
+     width: 510px;
+     height: 71px;
+     line-height: 45px;
+     text-align: center;
+     display: inline-block;
+     text-decoration: none;
+     letter-spacing: 3.6px;
+     margin-top: 31px;
+     margin-bottom: 49px;
+}
+.button2:hover{
+    box-shadow: none;
+}
+.Order:hover::after{
+    content: ">";
+}
+.Order{
+    color: honeydew;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24.01px;
+    letter-spacing: 4.4px;
+    margin-top: 24px;
+}
+.products_text{
+    /* Style for "The majest" */
+   width: 430px;
+   color: #212121;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 24.01px;
+   /* Text style for "The majest" */
+   letter-spacing: 0.4px;
+   margin-bottom: 15px;
+}
+.two-pic2{
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+}
+.first-photo-text2{
+    padding-left: 51px;
+    padding-top: 47px;
+   
+}
+.product{
+    margin-bottom: 36px;
+    padding-left: 195px;
+}
+.products_bigtext{
+    display: flex;
+    flex-direction: column;
+    width: 499px;
+    height: 244px;
+    align-content:space-between;
+}
+.products_h2{
+    padding-left: 120px;
+    padding-left: 125px;
+}
+.trolley{
+    position: absolute;
+    bottom: -70px;
+    left: 248px;
+    cursor: pointer;
+}
+.product_upper_menu{
+    margin-top: 245px;
+}
+.trending{
+    cursor: pointer;
+}
+.slaider8{
+    height: 75px;
+    width: 1178px;
+    margin: 0 auto;
+}
+.SHOWROOM{
+    margin-left: 0;
+    list-style-type: none;
+    width: 647px;
+    height: 13px;
+    
+    padding-top: 71px;
+    
+    display: flex;
+   
+    
+}
+.menu_down_link_active2{
+    text-decoration: none;
+    color: #212121;
+    border-bottom: 3px solid #212121;
+    display: block;
+    width: 78px;
+}
+.show{
+    border-bottom: 1px solid #6c6c6c;
+    width: 300px;
+    padding-left: 32px;
+}
+.show2{
+    border-bottom: 1px solid #6c6c6c;
+    width: 500px;
+    padding-left: 32px;
+}
+.show3{
+    padding-left: 32px;
+}
+.arrow2 img{
+    width: 30px;
+    height: 29px;
+    display: flex;
+    padding-left: 674px;
+    margin-bottom: 140px;
+    cursor: pointer;
+}
+.numbers:hover{
+text-decoration: underline;
+}
+.poster-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
